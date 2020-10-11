@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title>examen primera parte</title>
+	<script>
+	function comprobarclave(){
+		clave1=document.f1.clave1.value
+		clave2=document.f1.clave2.value
+
+		if(clave1=="leslin" && clave2=="martin"){
+			alert("Datos correctos..\n bienvenido");
+			var href="Index4.html";
+			window.location=href;
+		}
+		else{
+			alert("datos invalidos ..\n vuelva a ingresar sus datos ");
+			var href="indexPs.html";
+			window.location=href;
+		};
+	}	
+</script>
+</head>
+<body bgcolor="pink">
+	<link rel="stylesheet"type="text/css"href="style.css">
+	                <h3><center> BIENVENIDO </h3></center>
+	
+	<OL>
+		<LI>Esperamos que tenga una experiencia agradable</LI>
+	</OL>
+	<br>
+	<hr style=" height: 10px; width: 100%; background-color: lime; ">
+	<br>
+	<form action="" name="f1">
+		USUARIO:<input type="text" name="clave1" size="20">
+		<br>
+	</br>
+		CONTRASEÑA:<input type="password" name="clave2"size="20">
+		<br>
+	</br>
+		<input type="button" value="validar" onClick="comprobarclave()">
+	</form>
+</body>
+</html>
+
